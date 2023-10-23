@@ -1,0 +1,25 @@
+<h1>Resultados da pesquisa</h1>
+
+<% if @results.empty? %>
+  <p>Nenhuma cidade encontrada.</p>
+<% else %>
+
+  <table>
+    <tr>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>UF</th>
+      <th></th>
+    </tr>
+
+      <% @results.each do |result| %>
+        <tr>
+          <td><%= result.city %></td>
+          <td><%= result.state.state %></td>
+          <td><%= result.state.uf %></td>
+        </tr>
+      <% end %>
+  </table>
+
+
+<% end %>

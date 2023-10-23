@@ -1,0 +1,6 @@
+<%= form_tag "/search", method: "GET" do %>
+  <%= label_tag :city %>
+  <%= text_field_tag :city, params[:city] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
