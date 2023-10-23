@@ -12,8 +12,6 @@ Maringá 	Paraná 	PR
 If you type 'cur', should return:
 Curitiba 	Paraná 	PR
 
-### Things you may want to cover:
-
 * Versions: Ruby 2.7.0, Rails 5.2.8
 
 * Database initialization
@@ -23,9 +21,11 @@ Curitiba 	Paraná 	PR
     ```
 * Deployment instructions
     * To run the app in a Docker, execute de following commands:
+    * Build
     ```
     docker build --tag myapp .
     ```
+    * Run
    ```
     docker run -p 3000:3000 myapp
     ```
