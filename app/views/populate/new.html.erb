@@ -1,0 +1,10 @@
+<%= form_with scope: :populate, local: true do |form| %>
+  <p>
+    <%= form.label :Estado  %><br>
+    <%= form.text_field :estado %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
